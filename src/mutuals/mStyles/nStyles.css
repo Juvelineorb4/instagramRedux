@@ -1,0 +1,32 @@
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+.nv-font {
+    font-family:'Trebuchet MS';
+    font-size: 1.4rem;
+}
+
+.iconClass 
+{
+    font-size: 27px!important;
+    color: black;
+    margin-left: 20px;
+  
+    
+}
+.nvImput {
+    display: block;
+    width: 30%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color:  #fafafa;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
