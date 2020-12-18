@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 //import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import './iStyles/iStyles.css';
 import { useSelector, useDispatch } from "react-redux";
-import { Trash } from 'react-bootstrap-icons';
+
 import {
-    getAllProducts, setFavProducts, deleteFavProducts,
-    selectAllProducts, selectFavProducts
+    deleteFavProducts, selectFavProducts
 } from "../reducers/itemSlice";
+import CardFav from './cards/CardFav'
 
 
 const FavPage = (props) => {
@@ -17,9 +17,7 @@ const FavPage = (props) => {
     // const [modal, setModal] = useState(false);
     // const toggle = () => setModal(!modal)
 
-    const getBack = () => {
-        props.history.goBack('/favpage');
-    } 
+  
 
     const deleteFavorite = (index) => {
         let indexF = index;
@@ -32,19 +30,11 @@ const FavPage = (props) => {
             {FavProducts !== undefined ?
                 FavProducts.map((product, index) => {
                     return (
-                        <div className="col-12 col-sm-6 col-md-4 p-2" key={product._id}>
-                            <div className="card cdHProduct bgCFP2" >
-                                <div className="view overlay">
-                                <img className="card-img-top imgP" 
-                                src={product.Children[0].Imgs[0].Path} 
-                                alt={product.Children[0].Imgs[0].Alt} />
-                    
-                            </div>
-                        <hr className="hrStyle1"/>
-                            <Trash className="iconClass2" type="button" onClick={()=> deleteFavorite(index)} />
-
-                             </div>
-                    </div>
+                        <CardFav
+                        key = {product._id}
+                        product = {product}
+                        DeleteFav ={()=> deleteFavorite(index)}
+                        />
                     //         <div className="row">
 
 

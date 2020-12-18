@@ -2,7 +2,7 @@ import React from 'react';
 import { CaretDownSquare, Grid3x3, PersonCheckFill, ThreeDots } from 'react-bootstrap-icons';
 import { selectAllProducts} from "../reducers/itemSlice";
 import { useSelector } from "react-redux";
-
+import CardUser from './cards/CardUser'
 
 const UserPage= (props) => {
     const allProducts = useSelector(selectAllProducts);
@@ -56,18 +56,12 @@ const UserPage= (props) => {
                 <p className="pp1"> <Grid3x3/> PUBLICACIONES</p>
             </div>
                 <div className="row">
-                {allProducts !== undefined ? allProducts.map((product, index) => {
+                {allProducts !== undefined ? allProducts.map((product,index) => {
                             return (
-                                <div className="col-12 col-sm-6 col-md-4 p-2" key={product._id}>
-                                    <div className="card cdHProduct bgCFP1" >
-                        
-                                        <div className="view overlay ">
-                                            <img className="card-img-top imgP" 
-                                                src={product.Children[0].Imgs[0].Path} 
-                                                alt={product.Children[0].Imgs[0].Alt} />
-                                        </div>
-                                    </div>
-                                </div>  
+                              <CardUser
+                              key = {index}
+                              product = {product}
+                              />  
                             )
                 }): <div></div>
                 }

@@ -7,14 +7,17 @@ import { withRouter } from 'react-router';
 
  function Navbar(props) {
     return (
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand d-inline" type="button" onClick={() => props.history.push("/")}> <img className="card-img-top lHeader " src="https://i.ibb.co/C2hkjTj/Lumarkgram.jpg" alt="Lumarkgram" border="0" /></a>
-  <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+      
+     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+       <div className="d-flex">
+       <button className="navbar-toggler mb-2 " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse " id="navbarNavDropdown">
+  <a className="navbar-brand  ml-4" type="button" onClick={() => props.history.push("/")}> <img className="card-img-top lHeader " src="https://i.ibb.co/C2hkjTj/Lumarkgram.jpg" alt="Lumarkgram" border="0" /></a>
+       </div>
+  <div className="collapse navbar-collapse " id="navbarNavDropdown">
   <input className="nvImput m-1 " type="text" placeholder="Search" aria-label="Search"></input>
-    <ul class="navbar-nav float-right">
+  <ul className="navbar-nav ">
         <li className="nav-item active m-1  text-center">
             <HouseDoor className="iconClass" type="button" onClick={() => props.history.push("/")}/>         
         </li>
@@ -26,14 +29,9 @@ import { withRouter } from 'react-router';
                             className="rounded-circle  userNav" alt="user" 
                                 type="button" onClick={() => props.history.push("/userpage")}/>
             </li>
-     
     </ul>
   </div>
-</nav>
-      
-     
-
-        
+</nav>   
     );
 }
 

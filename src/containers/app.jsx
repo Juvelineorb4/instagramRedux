@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import Navbar from '../mutuals/navbar';
 import Footbar from '../mutuals/footbar';
 import axios from 'axios';
-import { useSelector, useDispatch, connect } from "react-redux";
-import { getAllProducts, setFavProducts, deleteFavProducts,
-        selectAllProducts, selectFavProducts} from "../reducers/itemSlice";
+import { useSelector, useDispatch} from "react-redux";
+import { getAllProducts, selectAllProducts} from "../reducers/itemSlice";
 
 
 function App(props) {
