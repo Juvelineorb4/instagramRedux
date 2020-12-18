@@ -11,17 +11,18 @@ function App(props) {
     const dispatch    = useDispatch();
     const allProducts = useSelector(selectAllProducts);
     console.log(allProducts);
-   
-    useEffect( ()=>{
+
+    useEffect(() => {
         function SearchProducts(){
-            window.scrollTo(0, 0);
-       axios.get('https://pz8cvzu4sl.execute-api.us-east-1.amazonaws.com/dev/product-ms/product/getProductByIdCompany?id=5e8d08fafd3f3d2eb89c5063#')
+        window.scrollTo(0, 0);
+        axios.get('https://pz8cvzu4sl.execute-api.us-east-1.amazonaws.com/dev/product-ms/product/getProductByIdCompany?id=5e8d08fafd3f3d2eb89c5063#')
             .then(res => { dispatch(getAllProducts(res.data));
                     })
             .catch(err => console.log(err)); 
                     }
        SearchProducts();
    },[dispatch]);
+
 
     return (
         <main className="main">

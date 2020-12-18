@@ -1,0 +1,171 @@
+.avatarHome{
+height: 50px;
+width: 50px;
+}
+.avatarHome1{
+height: 170px;
+width: 170px;
+margin-top: 0px;
+margin-left: 0px;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 38%;
+}
+.clLG6{
+    margin-top: 20px
+}
+.Rcircle {
+    border-radius: 50%!important;
+    border-color: hsl(327deg 6% 55% / 28%);
+    border-style: groove;
+}
+.Rcircle1 {
+    border-radius: 50%!important;
+
+}
+.mlCard {
+    margin-left: 0px;
+    margin-top: 40px;
+}
+.hrStyle{
+    margin-top: -15px;
+    color: #0000001a;
+}
+
+.hrStyle1{
+    
+    color: #0000001a;
+}
+.hrStyle2{
+    height: 1px;
+    margin-top: 25px;
+    color: #0000001a;
+}
+
+.titleCard{
+   font-family: Helvetica;
+    font-weight: 550!important;
+    margin-top: .7rem!important;
+    font-size: 14px;
+}
+.mt-Card1{
+margin-top: -10px;
+}
+
+.mt-Card2{
+margin-top: -10px;
+margin-right: 50px;
+}
+.mt-Card3{
+float: left;
+margin-top: -30px;
+margin-right: 50px;
+margin-left: 100px;
+}
+.iconClass 
+{
+    font-size: 27px!important;
+    color: black;
+    margin-left: 0px;
+  
+    
+}
+.iconClass1{
+    font-size: 27px!important;
+    color: red;
+    margin-left: 20px;
+  
+    
+}
+.iconClass2 {
+    font-size: 24px!important;
+    color: #868686;
+    margin-left: 2px;
+}
+.iconClass3 {
+    font-size: 24px!important;
+    color: #121111;
+    margin-left: 15px;
+    margin-bottom: 2px;
+}
+
+#right { float:right }
+.bgCFP{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgb(255, 255, 255);
+}
+.bgCFP1{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+}
+.bgCFP2{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgb(255, 255, 255);
+    height: 430px;
+}
+.ibtn-danger{
+    color: red;
+}
+.ibtn-dark{
+    color: black;
+}
+.HeartFill {
+    fill: red;
+}
+.brandT{
+    margin-top: -12px;
+    font-size: 13px;
+}
+.aside1{
+    margin: auto;
+    margin-right: 1.1rem;
+    margin-left: 98px;
+}
+.aside2{
+    margin: auto;
+    margin-right: 1.1rem;
+}
+.uName{
+  font-size: 23px;
+    font-weight: 300;
+    margin-right: 12px;
+}
+
+.bMessageU1{
+    border: 1px;
+    background: border-box;
+    border-style: solid;
+    border-color: #d1c3c396;
+    padding: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 6px;
+}
+.bMTU1{
+    font-weight: 500;
+}
+.mlPSS{
+    margin-left: 15px;
+}
+.p1{
+font-size: 17px;
+}
+.mtp1{
+    margin-top: -0.75rem!important;
+}
+.pp1{
+    text-align: center;
+}
+
+.imgP{
+    max-height: 330px;
+
+}

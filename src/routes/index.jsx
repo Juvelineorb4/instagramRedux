@@ -7,17 +7,15 @@ import UserRoute from "./user";
 import HomeRoute from "./home";
 
 function Routes(props) {
-
+    
     return (
         <Router >
         <App {...props}>
-            
                <UserRoute/>
                <FavRoute />
                <HomeRoute /> 
-           
         </App>
-         </Router>
+    </Router>
     );
 }
 export default Routes;

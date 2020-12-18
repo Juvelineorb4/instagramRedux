@@ -11,7 +11,7 @@
 {
     font-size: 27px!important;
     color: black;
-    margin-left: 20px;
+    margin: 0px;
   
     
 }
@@ -30,3 +30,17 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.lHeader{
+    width: 59%;
+}
+.mr-100{
+        margin-right: -100px;
+
+}
+.userNav{
+height: 30px;
+width: 30px;
+margin-left: 0px;
+}
+
